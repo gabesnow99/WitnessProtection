@@ -1,14 +1,14 @@
 from alignments.villian import Villian
 
 '''
-Can take a hostage
+Can prevent the witness from winning
 '''
-class HostageTaker(Villian):
+class Extortionist(Villian):
 
     def __init__(self):
         super().__init__()
 
 
 if __name__=='__main__':
-    h = HostageTaker()
-    print(h)
+    e = Extortionist()
+    print(e)

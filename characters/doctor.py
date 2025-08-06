@@ -10,7 +10,6 @@ class Doctor(Healer, Hero):
         super().__init__()
 
     def revive(self, player):
-        print("Baby come back to me.")
         return super().revive(player)
 
 
