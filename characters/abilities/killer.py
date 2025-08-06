@@ -1,14 +1,17 @@
 from player import Player
 
 '''
-Can revive
+Can kill
 '''
-class Healer(Player):
+class Killer(Player):
 
     def __init__(self):
         super().__init__()
 
+    def kill(self, player):
+        pass
+
 
 if __name__=='__main__':
-    h = Healer()
-    print(h)
+    k = Killer()
+    print(k)

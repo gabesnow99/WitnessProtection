@@ -1,4 +1,4 @@
-from hero import Hero
+from alignments.hero import Hero
 
 '''
 Citizens try to find and protect the witness.

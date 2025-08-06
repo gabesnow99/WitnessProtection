@@ -21,6 +21,7 @@ class Player():
 
     # Step time forward
     def tick(self, dt=1):
+        self.look_around()
         self.move(dt)
 
     # Propagate motion
@@ -35,12 +36,21 @@ class Player():
     def sprint(self):
         self.speed = self.max_speed
 
+    # Observe nearby players
+    def look_around(self):
+        pass
+
+    # Die
+    def die(self):
+        self.alive = False
+
     # Used to print info/stats on players
     def __str__(self):
         to_print = '===============================\n'
         to_print += f'Class:       {self.__class__.__name__}\n'
         to_print += f'Alignment:   {'Hero' if self.is_good else 'Villian'}\n'
         to_print += '-------------------------------\n'
+        to_print += f'Status:      {'Alive' if self.alive else 'Dead'}\n'
         to_print += f'Location:    {self.location}\n'
         to_print += '==============================='
         return to_print
