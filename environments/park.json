@@ -1,0 +1,29 @@
+{
+    "map_name": "Park",
+    "dimensions": {
+        "width": 1000,
+        "height": 1000
+    },
+    "time_of_day": "sunset",
+    "objects": {
+        "trees": [
+            { "id": 1, "position": { "x": 100, "y": 250 }},
+            { "id": 2, "position": { "x": 130, "y": 275 }}
+        ],
+        "buildings": [
+            {
+                "id": 1,
+                "type": "pavilion",
+                "position": { "x": 500, "y": 500 },
+                "size": { "width": 10, "length": 12, "height": 8 }
+            }
+        ]
+    },
+    "lights": [
+        {
+            "id": 1,
+            "position": { "x": 505, "y": 805 },
+            "intensity": 0.8
+        }
+    ]
+}

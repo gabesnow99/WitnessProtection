@@ -1,0 +1,46 @@
+{
+    "map_name": "Mystic Forest",
+    "dimensions": {
+      "width": 1000,
+      "height": 1000,
+      "unit": "meters"
+    },
+    "time_of_day": "sunset",
+    "weather": "foggy",
+    "terrain": {
+      "type": "forest",
+      "elevation_map": "elevation_data.png"
+    },
+    "objects": {
+      "trees": [
+        { "id": 1, "type": "oak", "position": { "x": 100, "y": 250 }, "height": 12 },
+        { "id": 2, "type": "pine", "position": { "x": 130, "y": 275 }, "height": 15 }
+      ],
+      "buildings": [
+        {
+          "id": 1,
+          "type": "cabin",
+          "position": { "x": 500, "y": 800 },
+          "size": { "width": 10, "length": 12, "height": 8 },
+          "material": "wood",
+          "occupants": 2
+        },
+        {
+          "id": 2,
+          "type": "watchtower",
+          "position": { "x": 750, "y": 100 },
+          "size": { "width": 6, "length": 6, "height": 20 },
+          "material": "stone",
+          "has_ladder": true
+        }
+      ]
+    },
+    "lights": [
+      {
+        "id": 1,
+        "position": { "x": 505, "y": 805 },
+        "intensity": 0.8,
+        "color": "#FFD700"
+      }
+    ]
+  }

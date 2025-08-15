@@ -1,4 +1,3 @@
-from characters.doctor import Doctor
+from environments.environment import Environment
 
-a = Doctor()
-print(a)
+a = Environment('environments/park.json')
