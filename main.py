@@ -6,20 +6,10 @@ from environments.objects.rectangular_object import RectangularObject
 from environments.objects.round_object import RoundObject
 
 
-WHITE = (255, 255, 255)
-# BLACK = (0, 0, 0)
-# RED = (255, 0, 0)
-# BLUE = (0, 0, 255)
-GREEN = (0, 255, 0)
-# DARKGREEN = (0, 100, 0)
-# BROWN = (165, 42, 42)
-# YELLOW = (255, 255, 0)
+pygame.init()
 
 env = Environment('environments/park.json')
-
-pygame.init()
 screen = pygame.display.set_mode((env.width, env.height))
-
 pygame.display.set_caption(env.map_name)
 
 def shade_background():
@@ -41,7 +31,7 @@ clock = pygame.time.Clock()
 while running:
 
     # Draw the moving point
-    pygame.draw.circle(screen, GREEN, (point_x, point_y), point_size)
+    pygame.draw.circle(screen, 'GREEN', (point_x, point_y), point_size)
 
     # Move the point randomly
     point_x += random.choice([-1, 0, 1])

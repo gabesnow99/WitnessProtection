@@ -8,7 +8,13 @@
     "objects": {
         "trees": [
             { "id": 1, "position": { "x": 100, "y": 250 }},
-            { "id": 2, "position": { "x": 130, "y": 275 }}
+            { "id": 2, "position": { "x": 130, "y": 275 }},
+            { "id": 1, "position": { "x": 110, "y": 280 }},
+            { "id": 2, "position": { "x": 330, "y": 300 }},
+            { "id": 1, "position": { "x": 320, "y": 260 }},
+            { "id": 2, "position": { "x": 335, "y": 280 }},
+            { "id": 1, "position": { "x": 340, "y": 250 }},
+            { "id": 2, "position": { "x": 430, "y": 225 }}
         ],
         "buildings": [
             {
@@ -17,13 +23,14 @@
                 "position": { "x": 250, "y": 100 },
                 "size": { "width": 20, "length": 50, "height": 8 }
             }
+        ],
+        "lights": [
+            { "id": 1, "position": { "x": 240, "y": 105 }, "intensity": 0.8 },
+            { "id": 2, "position": { "x": 240, "y": 125 }, "intensity": 0.8 },
+            { "id": 3, "position": { "x": 240, "y": 145 }, "intensity": 0.8 },
+            { "id": 1, "position": { "x": 280, "y": 105 }, "intensity": 0.8 },
+            { "id": 2, "position": { "x": 280, "y": 125 }, "intensity": 0.8 },
+            { "id": 3, "position": { "x": 280, "y": 145 }, "intensity": 0.8 }
         ]
-    },
-    "lights": [
-        {
-            "id": 1,
-            "position": { "x": 280, "y": 105 },
-            "intensity": 0.8
-        }
-    ]
+    }
 }

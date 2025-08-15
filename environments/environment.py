@@ -44,7 +44,7 @@ class Environment:
         self.objects['buildings'] = buildings
         # Lights
         lights = []
-        for l in map_data['lights']:
+        for l in map_data['objects']['lights']:
             l_loc = [l['position']['x'], l['position']['y']]
             l_intensity = l['intensity']
             lights.append(Light(l_loc, l_intensity))
@@ -81,7 +81,7 @@ class Environment:
                 if isinstance(obj, RectangularObject):
                     pygame.draw.rect(screen, obj.plotting_color, (obj.location[0], obj.location[1], obj.width, obj.length))
                 elif isinstance(obj, RoundObject):
-                    pygame.draw.circle(screen, obj.plotting_color, (obj.location[0], obj.location[1]), 10*obj.radius)
+                    pygame.draw.circle(screen, obj.plotting_color, (obj.location[0], obj.location[1]), obj.radius)
 
     # What is displayed when print(environment) is used
     def __str__(self):
