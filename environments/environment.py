@@ -11,6 +11,7 @@ from .objects.light import Light
 class Environment:
 
     def __init__(self, template):
+        self.brightness_array = None
         # TODO: Add [if json, if yaml, etc.]
         self.parse(template)
 
@@ -66,12 +67,21 @@ class Environment:
 
     # Returns semi-permanent brightness map
     # TODO: UNFINISHED
-    def brightness_map(self):
-        to_return = np.zeros((self.height, self.width))
-        for ii in range(self.width):
-            for jj in range(self.height):
-                to_return[ii, jj] = self.brightness_at([ii, jj])
-        return np.array(to_return)
+    def draw_brightness_map(self, screen):
+        import pygame
+
+        if self.brightness_array is None:
+
+            self.brightness_array = np.zeros((self.height, self.width))
+            self.brightness_surface = pygame.Surface(self.brightness_array.shape)
+
+            for ii in range(self.width):
+                for jj in range(self.height):
+                    self.brightness_array[ii, jj] = self.brightness_at([ii, jj])
+                    shade = (self.brightness_array[ii, jj] * 255).astype(np.uint8)
+                    self.brightness_surface.set_at((ii, jj), (shade, shade, shade))
+
+        screen.blit(self.brightness_surface, (0, 0))
 
     # Draw objects when using pygame screen
     def draw_objects_pygame(self, screen):

@@ -17,4 +17,5 @@ class Light(RoundObject):
     def brightness_at_range(self, r):
         if r < self.radius:
             r = self.radius
-        return self.intensity / r**2
+        # return self.intensity / r**2
+        return self.intensity / r
