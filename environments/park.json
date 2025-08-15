@@ -1,10 +1,10 @@
 {
     "map_name": "Park",
     "dimensions": {
-        "width": 1000,
-        "height": 1000
+        "width": 500,
+        "height": 500
     },
-    "time_of_day": "sunset",
+    "ambient_light": 0.2,
     "objects": {
         "trees": [
             { "id": 1, "position": { "x": 100, "y": 250 }},
@@ -14,15 +14,15 @@
             {
                 "id": 1,
                 "type": "pavilion",
-                "position": { "x": 500, "y": 500 },
-                "size": { "width": 10, "length": 12, "height": 8 }
+                "position": { "x": 250, "y": 100 },
+                "size": { "width": 20, "length": 50, "height": 8 }
             }
         ]
     },
     "lights": [
         {
             "id": 1,
-            "position": { "x": 505, "y": 805 },
+            "position": { "x": 280, "y": 105 },
             "intensity": 0.8
         }
     ]
