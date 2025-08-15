@@ -1,7 +1,7 @@
-from alignments.villian import Villian
-from abilities.healer import Healer
+from .alignments.villian import Villian
+from .abilities.healer import Healer
 
-from murderer import Murderer
+from .murderer import Murderer
 
 '''
 Can revive the killer

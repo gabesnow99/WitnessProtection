@@ -1,5 +1,5 @@
-from alignments.hero import Hero
-from abilities.killer import Killer
+from .alignments.hero import Hero
+from .abilities.killer import Killer
 
 '''
 Can sacrifice themself to blow nearby characters

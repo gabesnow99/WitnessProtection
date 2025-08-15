@@ -1,5 +1,5 @@
-from alignments.villian import Villian
-from abilities.killer import Killer
+from .alignments.villian import Villian
+from .abilities.killer import Killer
 
 '''
 Can revive the killer

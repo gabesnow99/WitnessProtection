@@ -1,4 +1,4 @@
-from alignments.villian import Villian
+from .alignments.villian import Villian
 
 '''
 Can prevent the witness from winning

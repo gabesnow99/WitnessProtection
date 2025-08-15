@@ -1,5 +1,5 @@
-from alignments.hero import Hero
-from abilities.healer import Healer
+from .alignments.hero import Hero
+from .abilities.healer import Healer
 
 '''
 Can revive any character by drawing a cross on their arm

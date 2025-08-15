@@ -2,3 +2,6 @@ The vision here is to recreate the witness protection game in software, then run
 want to each character to have a variety of attributes, including speed, endurance, suspicions,
 trusts, knowledge of what roles are available, ability to blend into the environment, ability to
 hide, to seek, to follow, etc.
+
+TODO:
+- Make tests work
